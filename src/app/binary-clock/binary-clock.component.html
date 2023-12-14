@@ -1,0 +1,55 @@
+<div class="w-80 grid gap-2">
+  <div
+    class="h-64 grid content-between rounded-3xl border-4 border-black bg-pink-400 p-2"
+  >
+    <div class="grid gap-5 grid-cols-3">
+      <div
+        *ngFor="let unit of ['H', 'M', 'S']; let i = index"
+        class="grid gap-4 grid-cols-2"
+      >
+        <div class="w-8 text-center text-black text-xl font-bold">
+          {{ unit }}
+        </div>
+        <div class="w-8 text-center text-black text-xl font-bold">
+          {{ unit }}
+        </div>
+      </div>
+    </div>
+
+    <div class="grid gap-5 grid-cols-3">
+      <div *ngFor="let time of clockData" class="grid gap-4 grid-cols-2">
+        <ng-container
+          *ngFor="let segment of time.binaryRepresentation; let first = first"
+        >
+          <div class="grid grid-rows-4 grid-flow-col gap-x-4 gap-y-5">
+            <div
+              *ngFor="let bit of segment; let firstBit = first"
+              [ngClass]="{
+                'row-start-2': first && firstBit,
+                'bg-violet-500': bit,
+                'bg-purple-300': !bit
+              }"
+              class="w-8 h-8 rounded-full border-4 border-black"
+            ></div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex px-3">
+    <ng-container *ngFor="let time of clockData; let last = last">
+      <div class="grid gap-4 grid-cols-2">
+        <div
+          *ngFor="let digit of time.value"
+          class="w-8 text-center text-black text-xl font-bold"
+        >
+          {{ digit }}
+        </div>
+      </div>
+      <div *ngIf="!last" class="w-7 text-center text-black text-xl font-bold">
+        :
+      </div>
+    </ng-container>
+  </div>
+</div>
