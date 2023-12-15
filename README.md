@@ -1,27 +1,60 @@
-# BinaryTime
+# Binary Clock
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+This project is a simple webpage created using Angular that displays a functional binary clock. The webpage provides information on how the binary clock represents time and how to read the time from it.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Introduction](#introduction)
+- [Features](#features)
+- [How to Run](#how-to-run)
+- [Binary Clock Explanation](#binary-clock-explanation)
+- [Screenshots](#screenshots)
+- [Live Demo](#live-demo)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Code scaffolding
+## Introduction
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This Angular project is designed to showcase a binary clock and educate users on how to interpret time using the binary clock format. The project aims to provide a simple and interactive way for users to understand the underlying principles of binary time representation.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Functional binary clock
+- Information on how to read time from a binary clock
+- Angular components for easy customization
 
-## Running unit tests
+## How to Run
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Follow these steps to run the project locally:
 
-## Running end-to-end tests
+1. Clone the repository: `git clone https://github.com/sanbinary/BinaryTime.git`
+2. Navigate to the project directory: `cd BinaryTime`
+3. Install dependencies: `npm install`
+4. Run the development server: `ng serve`
+5. Open your browser and visit: `http://localhost:4200/`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Binary Clock Explanation
 
-## Further help
+The binary clock represents time using a binary number system. The clock has separate columns for hours, minutes, and seconds, each represented in binary format. Understanding the binary clock involves interpreting the on/off status of each LED (Light Emitting Diode) in each column.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For a detailed explanation, please refer to the [Binary Clock Wikipedia Page](https://en.wikipedia.org/wiki/Binary_clock)
+
+## Screenshots
+
+![Binary Clock Screenshot](screenshots/binary-time.png)
+
+## Live Demo
+
+Explore the live demo: [Binary Clock Live Demo](https://main--aquamarine-bonbon-776b3c.netlify.app)
+
+## Thanks
+
+Thanks to CHATGPT for generating this README.md file! If you have any questions or feedback about this website, please feel free to contact us. We welcome all feedback and suggestions!
+
+## Contribution
+
+Contributions are welcome! If you have any ideas for improvements or find any issues, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
